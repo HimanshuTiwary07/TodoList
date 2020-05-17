@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #e2c35d,#d88771);
+    color:white;
+    font-family: "poppins",sans-serif;
+    min-height: 100vh;
+    
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+form input{
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+}
+form button{
+    padding: 0.7rem;
+    font-size: 1.6rem;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+form button:hover{
+    color:#d88771;
+    cursor: pointer;
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+
+min-width: 370px;
+list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex:1;
+}
+.trash-btn,
+.complete-btn{
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;   
+}
+
+.complete-btn{
+    background: rgb(73,204,73); 
+}
+.list-btn{
+    align-items: center;
+    margin-left: 46%;
+    margin-top: -30px;
+}
+.remove-opt-btn,.removeall-opt-btn{
+    padding: 5px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    border: solid white;  
+}
+
+.remove-opt-btn:hover,.removeall-opt-btn:hover{
+
+    transform: scale(5px);
+    background: white;
+    color: black;
+    border: solid black;  
+}
+
+.todo-item{
+padding: 0rem 0.5rem;
+}
+
+.fa-trash-o,.fa-check{
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration:line-through;
+    opacity: 0.5;
+}
+
+
+.fall{
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
